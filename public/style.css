@@ -1,0 +1,40 @@
+.device-tip {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(20px);
+    z-index: 99999;
+}
+
+.device-tip p {
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.svg-wave {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23ffffff' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E") repeat-x 0 100%;
+    background-size: 20px auto;
+    animation: waveMove 1s infinite linear
+}
+
+@keyframes waveMove {
+    from {
+        background-position: 0 100%
+    }
+    to {
+        background-position: -20px 100%
+    }
+}
